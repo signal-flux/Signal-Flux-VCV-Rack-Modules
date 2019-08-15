@@ -1,0 +1,24 @@
+{
+  "slug": "SignalFlux",
+  "name": "Signal Flux",
+  "version": "1.0.0",
+  "license": "",
+  "brand": "Signal Flux",
+  "author": "Sam Wolk and Signal Flux",
+  "authorEmail": "info@signalflux.org",
+  "authorUrl": "https://signalflux.org",
+  "pluginUrl": "https://github.com/signal-flux/Signal-Flux-VCV-Rack-Modules",
+  "manualUrl": "",
+  "sourceUrl": "",
+  "donateUrl": "",
+  "modules": [
+    {
+      "slug": "SimpleKnob",
+      "name": "Simple Knob",
+      "description": "Generates a voltage offset based on the knob position.",
+      "tags": [
+        "Utility"
+      ]
+    }
+  ]
+}

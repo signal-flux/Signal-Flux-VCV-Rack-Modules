@@ -6,8 +6,6 @@ Signal Flux is a collection of absolutely no-frills, elementary modules designed
 
 ### Simple Knob
 
-![Simple Knob](./res/SimpleKnob.svg)
-
 *Simple Knob* generates a constant, unipolar voltage that is proportional to the knob position.
 
 ## Updates

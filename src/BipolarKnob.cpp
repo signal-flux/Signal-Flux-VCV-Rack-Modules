@@ -1,7 +1,7 @@
 #include "plugin.hpp"
 
 
-struct SimpleKnob : Module {
+struct BipolarKnob : Module {
 	enum ParamIds {
 		KNOB_PARAM,
 		NUM_PARAMS
@@ -17,9 +17,9 @@ struct SimpleKnob : Module {
 		NUM_LIGHTS
 	};
 
-	SimpleKnob() {
+	BipolarKnob() {
 		config(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS);
-		configParam(KNOB_PARAM, 0.f, 10.f, 0.f, "Level");
+		configParam(KNOB_PARAM, -5.f, 5.f, 0.f, "Level");
 	}
 
 	void process(const ProcessArgs &args) override {
@@ -29,21 +29,21 @@ struct SimpleKnob : Module {
 };
 
 
-struct SimpleKnobWidget : ModuleWidget {
-	SimpleKnobWidget(SimpleKnob *module) {
+struct BipolarKnobWidget : ModuleWidget {
+	BipolarKnobWidget(BipolarKnob *module) {
 		setModule(module);
-		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/SimpleKnob.svg")));
+		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/BipolarKnob.svg")));
 
 		addChild(createWidget<ScrewSilver>(Vec(RACK_GRID_WIDTH, 0)));
 		addChild(createWidget<ScrewSilver>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, 0)));
 		addChild(createWidget<ScrewSilver>(Vec(RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 		addChild(createWidget<ScrewSilver>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(15.218, 46.063)), module, SimpleKnob::KNOB_PARAM));
+		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(15.218, 46.063)), module, BipolarKnob::KNOB_PARAM));
 
-		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(15.218, 96.812)), module, SimpleKnob::LEVEL_OUTPUT));
+		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(15.218, 96.812)), module, BipolarKnob::LEVEL_OUTPUT));
 	}
 };
 
 
-Model *modelSimpleKnob = createModel<SimpleKnob, SimpleKnobWidget>("SimpleKnob");
+Model *modelBipolarKnob = createModel<BipolarKnob, BipolarKnobWidget>("BipolarKnob");

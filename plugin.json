@@ -1,7 +1,7 @@
 {
   "slug": "SignalFlux",
   "name": "Signal Flux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "GPLv3",
   "brand": "Signal Flux",
   "author": "Sam Wolk and Signal Flux",
@@ -16,6 +16,14 @@
       "slug": "SimpleKnob",
       "name": "Simple Knob",
       "description": "Generates a voltage offset based on the knob position.",
+      "tags": [
+        "Utility"
+      ]
+    },
+    {
+      "slug": "BipolarKnob",
+      "name": "Bipolar Knob",
+      "description": "Outputs positive and negative voltage proprtional to knob position.",
       "tags": [
         "Utility"
       ]

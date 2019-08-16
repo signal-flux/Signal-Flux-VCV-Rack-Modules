@@ -19,6 +19,14 @@
       "tags": [
         "Utility"
       ]
+    },
+    {
+      "slug": "BipolarKnob",
+      "name": "Bipolar Knob",
+      "description": "Outputs positive and negative voltage proprtional to knob position.",
+      "tags": [
+        "Utility"
+      ]
     }
   ]
 }

@@ -2,7 +2,7 @@
   "slug": "SignalFlux",
   "name": "Signal Flux",
   "version": "1.0.1",
-  "license": "GPLv3",
+  "license": "GPL-3.0-or-later",
   "brand": "Signal Flux",
   "author": "Sam Wolk and Signal Flux",
   "authorEmail": "info@signalflux.org",

@@ -14,7 +14,7 @@
   "modules": [
     {
       "slug": "SimpleKnob",
-      "name": "Simple Knob",
+      "name": "Unipolar Offset",
       "description": "Generates a voltage offset based on the knob position.",
       "tags": [
         "Utility"
@@ -22,7 +22,7 @@
     },
     {
       "slug": "BipolarKnob",
-      "name": "Bipolar Knob",
+      "name": "Bipolar Offset",
       "description": "Outputs positive and negative voltage proprtional to knob position.",
       "tags": [
         "Utility"

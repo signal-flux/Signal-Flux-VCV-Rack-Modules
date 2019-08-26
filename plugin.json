@@ -27,6 +27,30 @@
       "tags": [
         "Utility"
       ]
+    },
+    {
+      "slug": "Attenuate",
+      "name": "Attenuate",
+      "description": "A single attenuator.",
+      "tags": [
+        "utility"
+      ]
+    },
+    {
+      "slug": "Attenuvert",
+      "name": "Attenuvert",
+      "description": "A single attenuverter.",
+      "tags": [
+        "utility"
+      ]
+    },
+    {
+      "slug": "Invert",
+      "name": "Invert",
+      "description": "A single inverter.",
+      "tags": [
+        "utility"
+      ]
     }
   ]
 }

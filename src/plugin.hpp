@@ -10,3 +10,6 @@ extern Plugin *pluginInstance;
 // extern Model *modelMyModule;
 extern Model *modelSimpleKnob;
 extern Model *modelBipolarKnob;
+extern Model *modelAttenuate;
+extern Model *modelAttenuvert;
+extern Model *modelInvert;
